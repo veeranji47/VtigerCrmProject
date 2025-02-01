@@ -20,12 +20,12 @@ public class ReadDataFromExcel {
 		
 		
 		
-//		for(int i = 0; i <= sheet.getLastRowNum(); i++) {
-//			String productCat =  wb.getSheet("MultipleData").getRow(i).getCell(0).toString();
-//			String productName =  wb.getSheet("MultipleData").getRow(i).getCell(1).toString();
-//			
-//			System.out.println(productCat + "     " + productName);
-//		}
+		for(int i = 0; i <= last; i++) {
+			String productCat =  wb.getSheet("MultipleData").getRow(i).getCell(0).toString();
+			String productName =  wb.getSheet("MultipleData").getRow(i).getCell(1).toString();
+			
+			System.out.println(productCat + "     " + productName);
+		}
 		
 		
 		wb.close();

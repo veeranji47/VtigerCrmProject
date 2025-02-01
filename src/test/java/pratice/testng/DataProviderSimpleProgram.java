@@ -12,7 +12,7 @@ public class DataProviderSimpleProgram {
 		
 		System.out.println("First name : "+frstName +"\t" + "Last Name : "+lastName);
 	}
-	@DataProvider
+	@DataProvider(name = "getData")
 	public Object[][] getData() {
 		ExcelUtility xutil = new ExcelUtility();
 		xutil.intiExcel();

@@ -1,5 +1,9 @@
 package hardcodedScriptsCRM;
 
+import java.awt.AWTException;
+import java.awt.Event;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -19,7 +23,8 @@ import org.openqa.selenium.interactions.Actions;
 
 public class CreateContactTest {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, AWTException {
+		
 		FileInputStream fis = new FileInputStream("./commonData.properties");
 		FileInputStream fis2 = new FileInputStream("./src/test/resources/testScriptData.xlsx");
 		Workbook wb = WorkbookFactory.create(fis2);

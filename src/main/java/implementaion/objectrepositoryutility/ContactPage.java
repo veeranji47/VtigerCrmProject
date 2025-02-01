@@ -19,4 +19,5 @@ public class ContactPage {
 	public void clickCretaeOrgBtn() {
 		createCntBtn.click();
 	}
+	
 }
