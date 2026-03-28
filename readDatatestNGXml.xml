@@ -8,7 +8,7 @@
 	<parameter name="timeouts" value="20"></parameter>
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="implementation.datadriventesting.TestNGXmlImplentation" />
+			<class name="pratice.testng.AmazonDataProviderProgram" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
